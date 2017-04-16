@@ -1,0 +1,21 @@
+.page-header li{
+	font-size: 2em;
+	margin-top: 40px;
+}
+.page-header img{
+	height: 100px;
+	width: 150px;
+}
+.page-header .cart{
+	margin-top: 20px;
+}
+.pizzaimg{
+	height:200px;
+	width:300px;
+}
+.footimg{
+	float:left;
+}
+.order{
+	padding-bottom: 10px;
+}

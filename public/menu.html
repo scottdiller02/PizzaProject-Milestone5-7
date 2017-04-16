@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Javascript</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href=".\css\styleB.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+	<div class="row">
+		<img class="col-md-2" src="./images/logo1.jpg" alt="logo" > 
+		<div class="col-md-8">
+			<ul  class="list-inline">
+				<li><a class="list-inline-item" href="./main.html"><u>Main</u></a></li>
+				<li><a class="list-inline-item" href="./menu.html"><u>Menu</u></a></li>
+				<li><a class="list-inline-item" href="./storelocation.html"><u>Store Location</u></a></li>
+				<li><a class="list-inline-item" href="./about.html"><u>About</u></a></li>
+				<li><a class="list-inline-item" href="./checkout.html"><u>Check Out</u></a></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<a href="cart.html"> <img class="cart" src="./images/cart.jpg" alt="cart" style="width:60px;height:60px;"><span class="badge" id="numItem"> 0</span> </a>
+		</div>
+	</div>
+	</div>
+	<h1>Order Now:</h1>
+	<br>
+	<div class="order">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="text-center">
+			<h4 class="pizzaName">Pepperroni</h4>
+			<img class="pizzaimg" src="./images/pizza1.jpg" alt="pizza1">
+			<h4>$8.99</h4>
+				<button type="button" class="btn btn-primary ">Order</button>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="text-center">
+			<h4 class="pizzaName">Cheese</h4>
+			<img class="pizzaimg" src="./images/cheesePizza.jpg" alt="pizza3">
+			<h4>$7.99</h4>
+				<button type="button" class="btn btn-primary ">Order</button>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="text-center">
+			<h4 class="pizzaName">Hawaiian</h4>
+			<img class="pizzaimg" src="./images/pizza2.png" alt="pizza2">
+			<h4>$10.99</h4>
+				<button type="button" class="btn btn-primary ">Order</button>
+			</div>
+		</div>
+	</div>
+<br>
+<br>
+<br>
+
+	<div class="row">
+		<div class="col-md-4">
+			<div class="text-center">
+			<h4 class="pizzaName">Works</h4>
+			<img class="pizzaimg" src="./images/worksPizza.jpg" alt="pizza1">
+			<h4>$10.99</h4>
+				<button type="button" class="btn btn-primary ">Order</button>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="text-center">
+			<h4 class="pizzaName">Chicken Alfredo</h4>
+			<img class="pizzaimg" src="./images/pizza2.jpg" alt="pizza3">
+			<h4>$11.99</h4>
+				<button type="button" class="btn btn-primary ">Order</button>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="text-center">
+			<h4 class="pizzaName">Veggie</h4>
+			<img class="pizzaimg" src="./images/veggiePizza.jpg" alt="pizza2">
+			<h4>$9.99</h4>
+				<button type="button" class="btn btn-primary ">Order</button>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+	</div>
+<hr>
+		<footer>
+		<div class="row">
+			<div class="col-md=1">
+			<img class="footimg" src="./images/logo1.jpg" alt="logo" height="100" width="100">
+			</div>
+			<div class="col-md-6">
+			<a class="list-inline-item" href="./service.html">Customer Service</a>
+			<a class="list-inline-item"href="./account.html">Account</a>
+			<a class="list-inline-item"href="./special.html">Special</a>
+			<a class="list-inline-item"href="./about.html">About</a>
+			<button type="button" onclick="clearCart()">clear cart</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+			<p>Lorem ipsum Sit amet adipisicing dolor non anim voluptate cillum dolor eu eu ad irure.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Lorem ipsum Sit amet adipisicing dolor non anim voluptate cillum dolor eu eu ad irure.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Lorem ipsum Sit amet adipisicing dolor non anim voluptate cillum dolor eu eu ad irure.</p>
+			</div>
+			<div class="col-md-3"
+				<p >Lorem ipsum Duis aute Excepteur.</p>
+			</div>
+		</div>
+
+		</footer>
+</div>
+
+<script type="text/javascript" src="./js/cartClient.js"></script>
+<script type="text/javascript">
+	
+	registerButtonEvents();
+</script>
+</body>
+</html>

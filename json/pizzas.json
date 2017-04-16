@@ -1,0 +1,6 @@
+{"pizzas":
+[{"name":"cheese","price":9.89, "size":"M","img":"cheese.jpg","description":"five cheeses"},
+ {"name":"works","price":9.89, "size":"M","img":"works.jpg","description":"meats, vegs"},
+ {"name":"chicken bbq","price":9.89, "size":"M","img":"chickenAlf.jpg","description":"chicken, with bbq sauce"},
+ {"name":"pepperoni","price":9.89, "size":"M","img":"pepperoni.jpg","description":"vegs, cheeses"}
+]}
