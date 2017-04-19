@@ -1,0 +1,13 @@
+{{!--menu.handlebars --}}
+<div class="row">
+{{#each infoMenu}}
+<div class="col-md-4">
+			<div class="text-center">
+			<h3 class="pizzaName">{{name}}</h3>
+			<img class="pizzaimg" src="{{img}}" alt="{{name}}">
+			<h4>${{price}}</h4>
+				<button type="button" class="btn btn-primary " onclick="addToCart({{@index}})">Order</button>
+			</div>
+</div>
+{{/each}}
+</div>

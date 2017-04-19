@@ -17,6 +17,23 @@
 </head>
 <body>
 
+<div class="container">
+	<div class="page-header">
+	<div class="row">
+		<img class="col-md-2" src="./images/logo1.jpg" alt="logo" > 
+		<div class="col-md-8">
+			<ul  class="list-inline">
+				<li><a class="list-inline-item" href="./main"><u>Main</u></a></li> 
+				<li><a class="list-inline-item" href="./menu"><u>Menu</u></a></li>
+				<li><a class="list-inline-item" href="./signup"><u>Sign Up</u></a></li>
+				<li><a class="list-inline-item" href="./about"><u>About</u></a></li>
+				<li><a class="list-inline-item" href="./cart"><u>Check Out</u></a></li>
+			</ul>
+		</div>
+		
+	</div>
+	</div>
+
 <div class="row">
 	
 	<div class="col-md-6 col-md-push-1">
@@ -34,10 +51,50 @@
 
 
 </div>
+
+<div class="row">
+<br><br>
+<h2 id="data">Enter your phone number:</h2>
+<input type="text" name="" id="phone"><br>
+
+<button type="button" class="btn btn-primary" onclick="sendOrder()">Order</button><hr>
+</div>
+
+<hr>
+		<footer>
+		<div class="row">
+			<div class="col-md=1">
+			<img class="footimg" src="./images/logo1.jpg" alt="logo" height="100" width="100">
+			</div>
+			<div class="col-md-6">
+			<a class="list-inline-item" href="./main">Home</a>
+			<a class="list-inline-item" href="./signup">Signup</a>
+			<a class="list-inline-item" href="./cart">Check Out</a>
+			<a class="list-inline-item" href="./about">About</a>
+			<button type="button" onclick="clearCart()">clear cart</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+			<p>Lorem ipsum Sit amet adipisicing dolor non anim voluptate cillum dolor eu eu ad irure.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Lorem ipsum Sit amet adipisicing dolor non anim voluptate cillum dolor eu eu ad irure.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Lorem ipsum Sit amet adipisicing dolor non anim voluptate cillum dolor eu eu ad irure.</p>
+			</div>
+			<div class="col-md-3"
+				<p >Lorem ipsum Duis aute Excepteur.</p>
+			</div>
+		</div>
+
+		</footer>
 <script type="text/javascript" src="./js/cartClient.js"></script>
+<script type="text/javascript" src="./js/funcs.js"></script>
 <script type="text/javascript">
 	//registerButtonEvents2();
-	showCart();
+	//showCart();
 </script>
 
 </body>

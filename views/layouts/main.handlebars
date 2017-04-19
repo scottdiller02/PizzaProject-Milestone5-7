@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Main Page Bilbos Pizza</title>
+	<title>Scott Diller Pizza Project</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
@@ -22,7 +22,7 @@
 		<img class="col-md-2" src="./images/logo1.jpg" alt="logo" > 
 		<div class="col-md-8">
 			<ul  class="list-inline">
-				<li><a class="list-inline-item" href="./main"><u>Main</u></a></li>
+				<li><a class="list-inline-item" href="./main"><u>Main</u></a></li> 
 				<li><a class="list-inline-item" href="./menu"><u>Menu</u></a></li>
 				<li><a class="list-inline-item" href="./signup"><u>Sign Up</u></a></li>
 				<li><a class="list-inline-item" href="./about"><u>About</u></a></li>
@@ -34,13 +34,7 @@
 		</div>
 	</div>
 	</div>
-	<div class="text-center">
-	<div class="order">
-	<h3>Bilbo's Pizza</h3>
-	<p>Bilbo's Pizza was established in 1996 by a college students and his friends. Since the beginning Bilbo's has prided themselves on their use of technology. Bilbo's has revolutionized technology in the pizza industry and is paving the way for websites in the food industry. To get the same great pizza taste we use our owners great great grandmothers secret recipe, which is the only thing she brought with her as she rowed across the ocean in a bathtub from Italy to start a new life. The pizza is made with the american dream and love which gives it its great succulent flavor.</p>
-	<a href="./menu"><button type="button" class="btn btn-primary">Order Now</button></a>
-	</div>
-	</div>
+	{{{body}}}
 <hr>
 		<footer>
 		<div class="row">
@@ -52,6 +46,7 @@
 			<a class="list-inline-item" href="./signup">Signup</a>
 			<a class="list-inline-item" href="./cart">Check Out</a>
 			<a class="list-inline-item" href="./about">About</a>
+			<button type="button" onclick="clearCart()">clear cart</button>
 			</div>
 		</div>
 		<div class="row">
@@ -73,9 +68,10 @@
 </div>
 
 <script type="text/javascript" src="./js/cartClient.js"></script>
+<script type="text/javascript" src="./js/funcs.js"></script>
 <script type="text/javascript">
 	getCartNum();
-	registerButtonEvents();
+	//registerButtonEvents();
 </script>
 </body>
 </html>

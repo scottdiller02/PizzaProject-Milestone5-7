@@ -1,4 +1,17 @@
-var arr;
+var arr=[];
+
+//trigger automatically..
+$(document).ready(function(){
+	var jqxhr=$.ajax("/getMenuItems")
+	.done(function(docs){
+		for(doc of docs)
+			arr.push(doc);
+		generateCart();
+	})
+	.fail(function(){
+		alert("Try Again");
+	})
+})
 
 function generateMenuNum(){
 	var numS=localStorage.getItem("num");
@@ -138,4 +151,27 @@ function getMenuArr(){
 
 
    
+}
+
+function sendOrder () {
+	cartArr=JSON.parse("["+localStorage.getItem("cart")+"]");
+	var itemIds=[];
+	if(cartArr===null)
+		document.getElementById("cart").value="No Item!";
+	else{
+		for(index of cartArr)
+			itemIds.push(arr[index]._id);
+		var phone=$("#phone").val() //document.getElementById("phone").value;
+		var order= {"phone":phone,"itemIds":itemIds};
+
+		$.ajax({
+			method: "post",
+			url: "processOrders",
+			data: order
+		})
+		.done(function( result ) {
+			$("#myCart").html("<h4>Your order has been placed! "+result +"<h4>");
+				clearStorage();
+	});
+	}
 }

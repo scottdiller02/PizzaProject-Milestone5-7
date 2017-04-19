@@ -22,15 +22,15 @@
 		<img class="col-md-2" src="./images/logo1.jpg" alt="logo" > 
 		<div class="col-md-8">
 			<ul  class="list-inline">
-				<li><a class="list-inline-item" href="./main.html"><u>Main</u></a></li>
-				<li><a class="list-inline-item" href="./menu.html"><u>Menu</u></a></li>
-				<li><a class="list-inline-item" href="./storelocation.html"><u>Store Location</u></a></li>
-				<li><a class="list-inline-item" href="./about.html"><u>About</u></a></li>
-				<li><a class="list-inline-item" href="./checkout.html"><u>Check Out</u></a></li>
+				<li><a class="list-inline-item" href="./main"><u>Main</u></a></li>
+				<li><a class="list-inline-item" href="./menu"><u>Menu</u></a></li>
+				<li><a class="list-inline-item" href="./signup"><u>Sign Up</u></a></li>
+				<li><a class="list-inline-item" href="./about"><u>About</u></a></li>
+				<li><a class="list-inline-item" href="./cart"><u>Check Out</u></a></li>
 			</ul>
 		</div>
 		<div class="col-md-2">
-			<a href="cart.html"> <img class="cart" src="./images/cart.jpg" alt="cart" style="width:60px;height:60px;"><span class="badge" id="numItem"> 0</span> </a>
+			<a href="./cart"> <img class="cart" src="./images/cart.jpg" alt="cart" style="width:60px;height:60px;"><span class="badge" id="numItem"> 0</span> </a>
 		</div>
 	</div>
 	</div>
@@ -61,7 +61,7 @@
 	</div>
 
 	<div class="row">
-		<h1>Welcome to Bilbo's Pizza Store! We deliver</h1>
+		<h1>Welcome to Bilbo's Pizza Store! We deliver!</h1>
 	</div>
 <hr>
 		<footer>
@@ -70,10 +70,10 @@
 			<img class="footimg" src="./images/logo1.jpg" alt="logo" height="100" width="100">
 			</div>
 			<div class="col-md-6">
-			<a class="list-inline-item" href="./service.html">Customer Service</a>
-			<a class="list-inline-item"href="./account.html">Account</a>
-			<a class="list-inline-item"href="./special.html">Special</a>
-			<a class="list-inline-item"href="./about.html">About</a>
+			<a class="list-inline-item" href="./main">Home</a>
+			<a class="list-inline-item" href="./signup">Signup</a>
+			<a class="list-inline-item" href="./cart">Checkout</a>
+			<a class="list-inline-item" href="./about">About</a>
 			<button type="button" onclick="clearCart()">clear cart</button>
 			</div>
 		</div>
@@ -97,7 +97,7 @@
 
 <script type="text/javascript" src="./js/cartClient.js"></script>
 <script type="text/javascript">
-	
+	getCartNum();
 	registerButtonEvents();
 </script>
 </body>

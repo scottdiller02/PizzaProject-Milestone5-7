@@ -1,12 +1,23 @@
 //this pizza array will get the information from node.js
-let pizzas=[
-{name: "Pepperoni", img: "./images/pizza1.jpg", price:8.99 },
-{name: "Cheese", img: "./images/cheesePizza.jpg", price:7.99 },
-{name: "Hawaiian", img: "./images/pizza2.png", price:10.99 },
-{name: "Works", img: "./images/worksPizza.jpg", price:10.99 },
-{name: "Alfredo", img: "./images/pizza2.jpg", price:11.99 },
-{name: "Veggie", img: "./images/veggiePizza.jpg", price:9.99 },
-];
+let pizzas=[];
+//{name: "Pepperoni", img: "./images/pizza1.jpg", price:8.99 },
+//{name: "Cheese", img: "./images/cheesePizza.jpg", price:7.99 },
+//{name: "Hawaiian", img: "./images/pizza2.png", price:10.99 },
+//{name: "Works", img: "./images/worksPizza.jpg", price:10.99 },
+//{name: "Alfredo", img: "./images/pizza2.jpg", price:11.99 },
+//{name: "Veggie", img: "./images/veggiePizza.jpg", price:9.99 },
+//
+//];
+$(document).ready(function(){
+	var jqxhr = $.ajax( "/getMenuItems" ).done(function(docs) {
+		for(doc of docs)
+			pizzas.push(doc);
+		showCart();
+	})
+});
+//copy from ajax handout
+//remove .fail
+//change generatecart to showcart
 
 
 function registerButtonEvents()
@@ -18,7 +29,9 @@ function registerButtonEvents()
 			addToCart(i);
 		} );
 	}
+}
 
+function getCartNum(){
 	let number= localStorage.getItem("number");
 	if (number===null)
 		number=0;
@@ -131,4 +144,8 @@ function removePizza(rID)
 	}
 
 	showCart();
+}
+
+function sendOrder(){
+
 }
