@@ -1,0 +1,6 @@
+{
+   "devServer":
+    {
+       "url":"mongodb://bilbospizza:h2mFh2GsVqrvqVYdbB3OMseuyFwn0ovYR33bERqLitXBsrXDr90CDxWNz49pd0GiTz78TFqJUB3m9vPxHnQTdw==@bilbospizza.documents.azure.com:10250/pizzadb?ssl=true"
+    }
+}
