@@ -19,6 +19,7 @@ app.use(require('./routers/popMenus'));
 app.use(require("./routers/getMenuItems"));
 app.use(require('./routers/signup'));
 app.use(require('./routers/processOrders'));
+app.use(require('./routers/getDailySum'));
 // Connect to Mongo on start
 db.connect(url, function(err){
     if (err) {
@@ -72,6 +73,11 @@ app.get("/about",function(req,res){
 app.get("/signup",function(req,res){
 		console.log("Coming a signuprequest!");
 	res.render(`signup`);
+});
+
+app.get("/summary",function(req,res){
+		console.log("Coming a summaryrequest!");
+	res.render(`summary`);
 });
 
 //app.get("/getMenuItems", function(req, res){

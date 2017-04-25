@@ -13,6 +13,18 @@ $(document).ready(function(){
 	})
 })
 
+$(document).ready(function(){
+	var jqxhr=$.ajax("/getDailySum")
+	.done(function(docs){
+		for(doc of docs)
+			arr.push(doc);
+		generateSum();
+	})
+	.fail(function(){
+		alert("Try Again");
+	})
+})
+
 function generateMenuNum(){
 	var numS=localStorage.getItem("num");
 	if(numS===null){                                 //isNaN(numS)
@@ -121,6 +133,41 @@ function generateCart() {
 	}
 	//htmlPart=localStorage.getItem("cart");
 	var div=document.getElementById("cart");
+	div.innerHTML=htmlPart;
+	//div.insertAdjacentHTML('afterend', htmlPart);
+}
+
+function generateSum() {
+	var i=0;
+	var htmlPart="";
+	var arrS=localStorage.getItem("sum");
+	if(arrS===null)
+		htmlPart="You have no items in the cart!";
+	else
+	{
+		var arrIndices = JSON.parse("[" + arrS + "]");
+	
+	  for(i = 0, length1 = arrIndices.length; i < length1; i++){
+	  	itemNo=arrIndices[i];
+		 if(i%3===0)
+		 {
+		 	htmlPart+='<div class="row top-margin">';		
+		}
+		htmlPart+='<div class="col-sm-4 text-center"';
+		htmlPart+='<p>'+arr[itemNo].name+'</p>';
+		var imgName=arr[itemNo].img;
+		var str='<img src="./images/'+imgName+'" alt="./images/'+
+			imgName+'"' +'class=".img-responsive">';
+		htmlPart+=str;
+	
+		if(i%3===2)
+		{
+			htmlPart+='</div>';
+		}
+	  }
+	}
+	//htmlPart=localStorage.getItem("cart");
+	var div=document.getElementById("sum");
 	div.innerHTML=htmlPart;
 	//div.insertAdjacentHTML('afterend', htmlPart);
 }
